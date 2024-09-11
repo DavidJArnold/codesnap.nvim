@@ -358,6 +358,15 @@ require("codesnap").setup({
 })
 ```
 
+You can modify the default radius of the code block corners using `corner_radius`:
+```lua
+require("codesnap").setup({
+  -- ...
+  corner_radius = 16
+})
+```
+By setting `bg_padding = 0` and `corner_radius = 0`, you will not see any background.
+
 ## Watermark
 Watermark is something that makes screenshots more personalized, but if you don't like watermark just set it as an empty string to hide it.
 ```lua
@@ -408,7 +417,8 @@ There is a default config:
     min_width = 0,
     bg_x_padding = 122,
     bg_y_padding = 82,
-    save_path = os.getenv("XDG_PICTURES_DIR") or (os.getenv("HOME").. "/Pictures")
+    save_path = os.getenv("XDG_PICTURES_DIR") or (os.getenv("HOME").. "/Pictures"),
+    corner_radius = 16,
 }
 ```
 
