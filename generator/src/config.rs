@@ -33,6 +33,7 @@ pub struct TakeSnapshotParams {
     pub bg_x_padding: f32,
     pub bg_y_padding: f32,
     pub bg_padding: Option<f32>,
+    pub corner_radius: f32,
 }
 
 impl FromObject for TakeSnapshotParams {

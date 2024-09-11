@@ -44,7 +44,7 @@ pub fn take_snapshot(params: TakeSnapshotParams) -> render_error::Result<Pixmap>
         background_padding,
         vec![
             Box::new(Rect::new(
-                16.,
+                params.corner_radius,
                 params.min_width,
                 vec![
                     Box::new(MacTitleBar::from_radius(8., params.mac_window_bar)),
